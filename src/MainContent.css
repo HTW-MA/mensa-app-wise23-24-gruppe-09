@@ -1,0 +1,60 @@
+.container {
+  text-align: center;
+}
+
+.search-box {
+  width: 500px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 50px;
+  font-size: 16px;
+  box-sizing: border-box;
+  display: block;
+  margin-left: 10%;
+  margin-bottom: 15vh;
+}
+
+.Photoo {
+  width: 750px;
+  height: 700px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  position: fixed;
+  top: 60%;
+  right: 0;
+  transform: translate(40%, -40%);
+}
+
+/* Style for the image container */
+.image-container {
+  display: flex;
+  justify-content: start; /* Adjust spacing as needed */
+  margin-top: 20px; /* Adjust spacing as needed */
+  justify-content: center;
+  margin-right: 250px;
+}
+
+/* Style for small images */
+.small-image {
+  width: 70px; /* Adjust size as needed */
+  margin-right: 200px; /* Adjust spacing as needed */
+  }
+  .image-text{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left:-150px;
+    text-align: center;
+  }
+  /* Regular styles */
+.some-component {
+  background-color: white;
+  color: black;
+}
+
+/* Dark mode styles */
+.dark-mode .some-component {
+  background-color: #222;
+  color: #ddd;
+}

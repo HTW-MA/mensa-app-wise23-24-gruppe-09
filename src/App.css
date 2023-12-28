@@ -1,0 +1,50 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+/* Regular styles for components */
+.some-component, .star-grid, .star-grid-container {
+  background-color: white;
+  color: black;
+}
+
+/* Regular border color for StarGrid Container */
+.star-grid-container {
+  border: 1px solid #ccc;
+  /* Other regular styles for StarGrid Container */
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #222;
+  color: #ddd;
+}
+
+body.dark-mode .header {
+  /* dark mode specific styles for header */
+}
+
+body.dark-mode .searchBar {
+  /* dark mode specific styles for search bar */
+}
+
+/* Dark mode styles for StarGrid */
+body.dark-mode .star-grid {
+  background-color: #333; /* Dark color for StarGrid background */
+  color: #ddd; /* Text color for StarGrid in dark mode */
+  /* Other dark mode specific styles for StarGrid */
+}
+
+/* Dark mode border color for StarGrid Container */
+body.dark-mode .star-grid-container {
+  border: 1px solid #555; /* Dark mode border color */
+  /* Other dark mode specific styles for StarGrid Container */
+}
+img{
+  opacity:100%;
+}

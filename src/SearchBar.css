@@ -1,0 +1,23 @@
+.search-bar-container {
+    margin-bottom: 2em; /* Space between the search bar and the grid */
+    display: flex; /* Use Flexbox for alignment */
+    justify-content: flex-start; /* Align items to the start (left) */
+    margin-top: 30vh;
+    margin-left: 50vh; /* Adjust as needed for spacing from the left */
+}
+  
+.search-bar {
+    padding: 0.5em;
+    width: 20%; /* Adjust the width as needed */
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 1em;
+}
+.search-bar :hover{
+    transform: translateY(-5px);
+}
+.search-bar-container :hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease-in-out;
+
+}

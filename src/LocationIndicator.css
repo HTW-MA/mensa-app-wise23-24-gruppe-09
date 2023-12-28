@@ -1,0 +1,16 @@
+/* LocationIndicator.css */
+.location-indicator {
+    /* Add any desired styles for the container */
+    border: 1px solid #333; /* Example border style */
+    padding: 10px; /* Example padding */
+    max-width: 300px; /* Adjust the maximum width as needed */
+    margin: 20px auto 0; /* Center the container horizontally and move it 20px from the top */
+    text-align: center; /* Center the text horizontally */
+    position: absolute; /* Position the container absolutely */
+    top: 0; /* Position it at the top of the page */
+    left: 50%; /* Center it horizontally */
+    transform: translateX(-10%); /* Center it horizontally */
+    transform: translatey(50%); /* Center it horizontally */
+    border-radius: 20px;
+  }
+  

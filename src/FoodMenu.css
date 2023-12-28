@@ -1,0 +1,80 @@
+/* FoodMenu.css */
+.food-menu {
+    display: grid;
+    grid-template-columns: 1fr; /* One column layout */
+    gap: 1px; /* Space between grid items */
+    padding: 20px; /* Padding around the grid */
+    max-width: 140vh; /* Adjust as needed */
+    background-color: #f8f8f8; /* Light background */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-left: 1vh; /* Spacing from the left side of the page */
+    margin-top: 3vh;
+  }
+  
+  .menu-item {
+    background-color: #ffffff;
+    padding: 2vh;
+    border-radius: 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-top: 2vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex; /* Use Flexbox */
+    justify-content: space-between; /* Space between text and image */
+    align-items: center; /* Align items vertically */
+    border: 2px solid #FF5C00; /* Orange border */
+}
+
+.menu-item-image {
+    max-width: 20%; /* Limit image width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 20px; /* Rounded corners for images */
+    margin-left: 20px; /* Space between text and image */
+    margin-right: 50px; /* Increase right margin to move the image to the left */
+    opacity: 100%;
+}
+
+.menu-item-text {
+    max-width: 45%; /* Limit text width */
+}
+.menu-item-text h2, .menu-item-text p {
+    display: block;
+}
+.menu-item-text h2 {
+    margin-bottom: 5vh; /* Add some space below the item name */
+    margin-left: 5vh;
+}
+
+.menu-item-text p {
+    font-size: 2vh; /* Set font size to 20px */
+    font-style: italic; /* Make the text italic */
+    margin-top: 0; 
+    margin-left: 10vh;
+}
+/* Dark mode styles */
+/* Existing styles... */
+
+/* Dark mode styles */
+.food-menu.dark-mode {
+    background-color: #333; /* Darker background */
+    color: #fff; /* Lighter text */
+}
+
+.food-menu.dark-mode .menu-item {
+    background-color: #444; /* Darker item background */
+    border: 2px solid #555; /* Darker border color */
+}
+
+.food-menu.dark-mode .menu-item-text h2,
+.food-menu.dark-mode .menu-item-text p {
+    color: #ddd; /* Lighter text in dark mode */
+}
+
+/* More dark mode specific styles can be added as needed */
+
+.add-to-checkout-btn{
+    border: solid 2px #FF5C00;
+    font-size: 20px;
+    border-radius: 50px;
+    padding: 10px;
+}

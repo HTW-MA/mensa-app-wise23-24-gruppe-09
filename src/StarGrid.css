@@ -1,0 +1,124 @@
+.star-grid-container {
+  max-height: 50%; /* Set to the full viewport height */
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: start; /* Align to the top */
+  margin-top: 5vh; /* Remove top margin to extend to the top of the viewport */
+  margin-left: 25vh; /* Adjust left margin as needed */
+  padding: 1em; /* Padding inside the border */
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+.star-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 5em; /* Reduced gap for a tighter layout */
+  align-items: start; /* Align grid items to the top */
+  padding: 1em; /* Padding around the grid */
+}
+
+.star-item {
+  position: relative;
+  width: 100%; /* Full width of the column */
+  padding: 2vh; /* Padding inside the border */
+  box-sizing: border-box; /* Include padding in width/height calculations */
+  background-color: #e8e8e8; /* Light grey background color */
+  border: 1px solid #888; /* Border around each item */
+  border-radius: 20px;
+  
+
+}
+.star-item:hover {
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(-5px);
+}
+
+/* If you want a hover effect for the entire grid */
+.star-grid:hover {
+  transition: transform 0.5s ease-in-out;
+  transform: scale(1.01); /* Example: slightly scale up the grid */
+}
+.star-item-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.star-photo {
+  width: 25vh;
+  height: 15vh;
+  display: block;
+  border-radius: 30px;
+  margin: auto;
+}
+
+.star-title {
+  text-align: center;
+  margin-top: 1vh;
+  font-size: 1.5em;
+  color: #333;
+  width: 100%;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.star-text-left {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-left: 0;
+  display: flex;
+  font-size: 1em; /* Half the current size */
+  margin-top: 2vh; /* Increased margin to move text further down */
+  align-items: flex-start;
+}
+
+.star-text-right {
+  font-size: 1em; /* Half the current size */
+}
+
+body.dark-mode .star-grid-container {
+  background-color: #333; /* Dark background color for container */
+  border: 2px solid #555; /* Darker border for container */
+}
+
+body.dark-mode .star-grid {
+  /* Add specific styles for the grid in dark mode, if necessary */
+}
+
+body.dark-mode .star-item {
+  background-color: #222; /* Dark background for each grid item */
+  color: #ddd; /* Lighter text color for dark mode */
+}
+
+body.dark-mode .star-item.with-border::before {
+  border-color: #444; /* Darker border for grid items */
+}
+
+body.dark-mode .star-title {
+  color: #ddd;
+}
+.star-item .star-title,
+.star-item .star-text-left,
+.star-item .star-text-right,
+.star-item-link { /* Targeting the link itself */
+  text-decoration: none; /* Remove underline from text */
+  color: black; /* Set text color to black */
+}
+
+/* Ensure that the link style is applied even when hovered or focused */
+.star-item-link:hover,
+.star-item-link:focus {
+  text-decoration: none; /* Remove underline on hover or focus */
+  color: black; /* Maintain black text color on hover or focus */
+}
+
+/* Dark mode specific styles */
+body.dark-mode .star-item .star-title,
+body.dark-mode .star-item .star-text-left,
+body.dark-mode .star-item .star-text-right,
+body.dark-mode .star-item-link {
+  color: #ddd; /* Lighter text color for dark mode */
+}

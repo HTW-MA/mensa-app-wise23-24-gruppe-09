@@ -1,0 +1,10 @@
+/* ImageBanner.css */
+.image-banner img {
+    width: 80%; /* Makes the image responsive */
+    height: 50vh; /* Maintain aspect ratio */
+    border-radius: 20px; /* Optional: for rounded corners */
+    margin-bottom: 0px; /* Space below the image */
+    max-height: 30%;
+    margin-top: 1vh;
+  }
+  

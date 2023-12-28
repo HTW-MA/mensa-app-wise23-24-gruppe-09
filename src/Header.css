@@ -1,0 +1,26 @@
+h1{
+   color:  #FE6601;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size: 20vh;
+   margin-left: 10vh;
+   margin-top: 10px;
+}
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 3vh;
+    margin-left: 20vh;
+    margin-top: -10vh;
+    margin-bottom: 8vh;
+}
+/* Regular Header styles */
+.header {
+    background-color: white;
+    color: black;
+  }
+  
+  /* Dark mode Header styles */
+  .dark-mode .header {
+    background-color: #222;
+    color: #ddd;
+  }
+  

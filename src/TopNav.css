@@ -1,0 +1,106 @@
+/* TopNav.css */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  color: white;
+}
+
+.top-nav.dark-mode {
+  background-color: #222;
+  color: #ddd;
+}
+
+.logo-container {
+  flex-grow: 1;
+  display: flex;
+  align-items: center; /* Vertically center items */
+}
+
+.logo {
+  height: 40px; /* Adjust as needed */
+}
+
+.buttons-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Styles for the back button */
+.back-button {
+  background-color: transparent;
+  border: none;
+  color: #FE6601;
+  font-size: 20px;
+  cursor: pointer;
+  padding-right: 10vh;
+  transition: transform 0.3s ease;
+  margin-left: 25px; /* Space to the left */
+}
+
+.back-button:hover {
+  transform: scale(1.1);
+}
+
+.setting-item {
+  margin-bottom: 20px;
+}
+
+.setting-label {
+  margin-right: 50px;
+}
+
+.settings-popup {
+  position: fixed; /* Change from absolute to fixed */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  color: black;
+  border: 1px solid #ddd;
+  padding: 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* To ensure it appears above other content */
+  border-radius: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.settings-container {
+  display: flex;
+  flex-direction: column;
+  width: 20vh;
+}
+
+.language-button {
+  background-color: #4CAF50; /* Green background */
+  color: white;
+  padding: 10px 15px;
+  margin-left: 20px; /* Space to the left */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.language-button:hover {
+  background-color: #45a049; /* Slightly darker green on hover */
+}
+
+/* Styles for the notifications popup */
+.notifications-popup {
+  position: absolute;
+  top: 60px; /* Adjust as needed */
+  right: 10px; /* Adjust to position the popup */
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 100;
+}

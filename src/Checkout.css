@@ -1,0 +1,82 @@
+/* Style for the Checkout component */
+.checkout {
+    position: fixed;
+    top: 10vh;
+    right: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -2px 0 5px 1px #FE6601;
+    z-index: 1000;
+    overflow-y: auto;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style for the individual checkout items */
+.checkout-item {
+    background-color: #f8f8f8; /* Light gray background for each item */
+    margin-bottom: 10px; /* Space between items */
+    padding: 10px;
+    border-radius: 10px; /* Rounded corners for item cards */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for each item */
+}
+
+/* Style for the checkout button container */
+/* Removed as button is not wrapped in a separate container */
+
+/* Style for the checkout button */
+.checkout-button {
+    background-color: #FE6601;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20vh; /* Add some space between the last item and the button */
+    display: block; /* Ensuring the button is a block element */
+}
+
+/* Style for the h1 inside the checkout */
+.checkout h1 {
+    font-size: 2rem;
+    margin-bottom: 20px; /* Increased space below the header */
+    color: rgb(5, 5, 5);
+    display: flex;
+    justify-content: center;
+}
+
+/* Add hover effect to the button */
+.checkout-button:hover {
+    background-color: #FF8500;
+}
+
+/* Style for empty basket message */
+.empty-basket-message {
+    text-align: center;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 40vh;
+    margin-right: 15vh;
+}
+
+/* Dark mode specific styles */
+.checkout.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.checkout.dark-mode .checkout-item {
+    background-color: #444; /* Darker background for items in dark mode */
+}
+
+.checkout.dark-mode h1 {
+    color: white;
+}

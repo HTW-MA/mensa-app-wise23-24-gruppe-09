@@ -1,0 +1,38 @@
+.filter-component {
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+    margin-top: -8vh;
+    margin-left: 60vh;
+    animation: pulsate 2s infinite;
+}
+
+
+
+.select-style {
+    border: none;
+    border-radius: 20px;
+    background-image: linear-gradient(45deg, #FE6601, #FE6601);
+    padding: 5px 10px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.select-style:hover {
+    transform: translateY(-5px);
+}
+
+.filter-select {
+    width: 100%;
+    padding: 5px 10px;
+    border: none;
+    background-color: transparent;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
