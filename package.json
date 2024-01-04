@@ -1,0 +1,16 @@
+{
+  "name": "mensa-app-wise23-24-gruppe-09",
+  "version": "1.0.0",
+  "description": "1. Zeina Taher 582012\r     2. Frank Rauwald 568841\r     3. Fatima Ragab  582948",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.3",
+    "express": "^4.18.2"
+  }
+}
