@@ -4,21 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22281f8c-d4ab-428f-a4fa-2cfe0860a5e0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/mensa-app-wise23-24-gruppe-09.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controllers/additiveController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controllers/mealController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controllers/mensaController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/additiveRoutes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/mealRoutes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/mensaRoutes.js" afterDir="false" />
+    <list default="true" id="22281f8c-d4ab-428f-a4fa-2cfe0860a5e0" name="Changes" comment="Habe eine datei im commit vergessen">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/additiveController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/additiveController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/mealController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/mealController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/additiveRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/additives.routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/mealRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/meal.routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/mensaRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/mensaRoutes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,21 +39,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\prog_mob_Anwen_Frontend\mensa-app-wise23-24-gruppe-09" />
@@ -75,14 +73,45 @@
       <option name="presentableId" value="Default" />
       <updated>1704316672335</updated>
       <workItem from="1704316674226" duration="9871000" />
-      <workItem from="1704327138905" duration="10478000" />
+      <workItem from="1704327138905" duration="13578000" />
+      <workItem from="1704390380404" duration="1457000" />
+      <workItem from="1704391870886" duration="12685000" />
     </task>
+    <task id="LOCAL-00001" summary="1. Commit in dem ich grundsätzlich die Struktur für das Backend wiedergeben möchte und auch bereits die ersten Endpunkte eingeführt wurden. &#10;&#10;Zu erreichen ist leider bisher nur der /mensa endpoint, die anderen funktionieren noch nicht, auch nach über 24 h fehlersuche nicht">
+      <created>1704339293090</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1704339293090</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Habe eine datei im commit vergessen">
+      <created>1704339343739</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1704339343739</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="1. Commit in dem ich grundsätzlich die Struktur für das Backend wiedergeben möchte und auch bereits die ersten Endpunkte eingeführt wurden. &#10;&#10;Zu erreichen ist leider bisher nur der /mensa endpoint, die anderen funktionieren noch nicht, auch nach über 24 h fehlersuche nicht" />
+    <MESSAGE value="Habe eine datei im commit vergessen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Habe eine datei im commit vergessen" />
   </component>
 </project>
