@@ -13,11 +13,11 @@ const additivesRoute = require('./src/routes/additives.routes');
 // Verwende die Routen
 app.use('/', mensasRoute);
 console.log('middleware fuer mensa genutzt');
-app.use('/meals', mealsRoute);
+/*app.use('/meals', mealsRoute);
 console.log('middleware fuer meals genutzt');
 app.use('/additives', additivesRoute);
 console.log('middleware fuer additives genutzt');
-
+*/
 app.listen(port, () => {
     console.log(`Server listening at http://localhost:${port}`);
 });
