@@ -10,6 +10,8 @@ const mensasRoute = require('./src/routes/mensaRoutes');
 const mealsRoute = require('./src/routes/meal.routes');
 const additivesRoute = require('./src/routes/additives.routes');
 
+//Verwende JSON
+app.use(express.json());
 // Verwende die Routen
 app.use('/', mensasRoute);
 console.log('middleware fuer mensa genutzt');

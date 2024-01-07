@@ -81,5 +81,21 @@ router.get('/mealreview', async (req, res) => {
     }
 });
 
+// POST request
+router.post('/mealreview', async (req, res) => {
+    try {
+        console.log('Received request for /mealreview (POST)');
+
+        const mealreviewData = req.body;
+
+        const createdMealreview = await mealreviewController.createMealreview(mealreviewData);
+
+        res.status(201).json(createdMealreview); // 201 status code for successful resource creation
+    } catch (error) {
+        console.error(error);
+        res.status(500).send('Internal Server Error');
+    }
+});
+
 module.exports = router;
 
