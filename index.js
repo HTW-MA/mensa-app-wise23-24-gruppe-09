@@ -1,6 +1,9 @@
 // index.js
 
 const express = require('express');
+const https = require('https');
+const fs = require('fs');
+
 const app = express();
 const port = 3001;
 
@@ -20,6 +23,12 @@ console.log('middleware fuer meals genutzt');
 app.use('/additives', additivesRoute);
 console.log('middleware fuer additives genutzt');
 */
-app.listen(port, () => {
-    console.log(`Server listening at http://localhost:${port}`);
+
+const privateKey = fs.readFileSync('server.key','utf8');
+const certificate = fs.readFileSync('server.cert', 'utf8');
+const credentials = { key: privateKey, cert: certificate };
+
+const httpsServer = https.createServer(credentials, app);
+httpsServer.listen(port, () => {
+    console.log(`Server listening at https://localhost:${port}`);
 });

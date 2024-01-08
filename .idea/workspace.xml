@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22281f8c-d4ab-428f-a4fa-2cfe0860a5e0" name="Changes" comment="Post request eingerichtet für die mealreviews">
-      <change afterPath="$PROJECT_DIR$/src/controllers/canteenreviewController.js" afterDir="false" />
+    <list default="true" id="22281f8c-d4ab-428f-a4fa-2cfe0860a5e0" name="Changes" comment="implmentierung der restlichen Endpunkte (CRUD für mealreview und canteenreview)">
+      <change afterPath="$PROJECT_DIR$/server.cert" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server.key" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/mealreviewController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/mealreviewController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/mensaRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/mensaRoutes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +73,7 @@
       <workItem from="1704327138905" duration="13578000" />
       <workItem from="1704390380404" duration="1457000" />
       <workItem from="1704391870886" duration="13444000" />
-      <workItem from="1704648381190" duration="14293000" />
+      <workItem from="1704648381190" duration="17120000" />
     </task>
     <task id="LOCAL-00001" summary="1. Commit in dem ich grundsätzlich die Struktur für das Backend wiedergeben möchte und auch bereits die ersten Endpunkte eingeführt wurden. &#10;&#10;Zu erreichen ist leider bisher nur der /mensa endpoint, die anderen funktionieren noch nicht, auch nach über 24 h fehlersuche nicht">
       <created>1704339293090</created>
@@ -110,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1704662138221</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="implmentierung der restlichen Endpunkte (CRUD für mealreview und canteenreview)">
+      <created>1704747559303</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1704747559303</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,6 +141,7 @@
     <MESSAGE value="Ergänzen des exports der fetchMeal function und eine erste Lösung zu dem Endpunktproblem" />
     <MESSAGE value="Einrichten aller fehlender get Endpunkte (badge, menue, mealreview)" />
     <MESSAGE value="Post request eingerichtet für die mealreviews" />
-    <option name="LAST_COMMIT_MESSAGE" value="Post request eingerichtet für die mealreviews" />
+    <MESSAGE value="implmentierung der restlichen Endpunkte (CRUD für mealreview und canteenreview)" />
+    <option name="LAST_COMMIT_MESSAGE" value="implmentierung der restlichen Endpunkte (CRUD für mealreview und canteenreview)" />
   </component>
 </project>
