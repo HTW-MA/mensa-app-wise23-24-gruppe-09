@@ -8,7 +8,7 @@ const additiveController = require("../controllers/additiveController");
 const badgeController = require("../controllers/badgeController");
 const menueController = require("../controllers/menueController");
 const mealreviewController = require("../controllers/mealreviewController");
-
+const canteenreviewController = require("../controllers/canteenreviewController");
 
 
 
@@ -91,6 +91,99 @@ router.post('/mealreview', async (req, res) => {
         const createdMealreview = await mealreviewController.createMealreview(mealreviewData);
 
         res.status(201).json(createdMealreview); // 201 status code for successful resource creation
+    } catch (error) {
+        console.error(error);
+        res.status(500).send('Internal Server Error');
+    }
+});
+
+router.patch('/mealreview/:id', async (req, res) => {
+    try {
+        const mealReviewId = req.params.id;
+        const updatedData = req.body;
+
+        console.log(`Received request to update mealreview with ID: ${mealReviewId}`);
+
+        // Call the controller function for updating a meal review
+        const updatedMealreview = await mealreviewController.updateMealreview(mealReviewId, updatedData);
+
+        res.json(updatedMealreview);
+    } catch (error) {
+        console.error(error);
+        res.status(500).send('Internal Server Error');
+    }
+});
+
+router.delete('/mealreview/:id', async (req, res) => {
+    try {
+        const mealReviewId = req.params.id;
+
+        console.log(`Received request to delete mealreview with ID: ${mealReviewId}`);
+
+        // Call the controller function for deleting a meal review
+        await mealreviewController.deleteMealreview(mealReviewId);
+
+        res.status(204).send(); // 204 status code for successful resource deletion
+    } catch (error) {
+        console.error(error);
+        res.status(500).send('Internal Server Error');
+    }
+});
+
+router.get('/canteenreview', async (req, res) => {
+    try {
+        console.log('Received request for /canteenreview');
+        const canteenreview = await canteenreviewController.fetchCanteenreview();
+        res.json(canteenreview);
+    } catch (error) {
+        console.error(error);
+        res.status(500).send('Internal Server Error');
+    }
+});
+
+// POST request
+router.post('/canteenreview', async (req, res) => {
+    try {
+        console.log('Received request for /canteenreview (POST)');
+
+        const canteenreviewData = req.body;
+
+        const createdCanteenreview = await canteenreviewController.createCanteenreview(canteenreviewData);
+
+        res.status(201).json(createdCanteenreview); // 201 status code for successful resource creation
+    } catch (error) {
+        console.error(error);
+        res.status(500).send('Internal Server Error');
+    }
+});
+
+router.patch('/canteenreview/:id', async (req, res) => {
+    try {
+        const canteenReviewId = req.params.id;
+        const updatedData = req.body;
+
+        console.log(`Received request to update canteenreview with ID: ${canteenReviewId}`);
+
+        // Call the controller function for updating a meal review
+        const updatedCanteenreview = await canteenreviewController.updateCanteenreview(canteenReviewId, updatedData);
+
+        res.json(updatedCanteenreview);
+    } catch (error) {
+        console.error(error);
+        res.status(500).send('Internal Server Error');
+    }
+});
+
+router.delete('/canteenreview/:id', async (req, res) => {
+    try {
+        const canteenReviewId = req.params.id;
+
+        console.log(`Received request to delete canteenreview with ID: ${canteenReviewId}`);
+
+        // Call the controller function for deleting a meal review
+        await canteenreviewController.deleteCanteenreview(canteenReviewId);
+
+        res.status(204).send(); // 204 status code for successful resource deletion
     } catch (error) {
         console.error(error);
         res.status(500).send('Internal Server Error');
