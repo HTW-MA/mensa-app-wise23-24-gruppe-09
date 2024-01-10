@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22281f8c-d4ab-428f-a4fa-2cfe0860a5e0" name="Changes" comment="Implementierung des https protokolls lokal mithilfe von mkcert">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="22281f8c-d4ab-428f-a4fa-2cfe0860a5e0" name="Changes" comment="Implementierung von einer ersten Version von CORS, leider noch ungetestet da das Frontend noch nicht soweit ist">
+      <change afterPath="$PROJECT_DIR$/src/service/userService.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/mensaController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/mensaController.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +60,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\prog_mob_Anwen_Frontend\mensa-app-wise23-24-gruppe-09\src\database" />
       <recent name="C:\prog_mob_Anwen_Frontend\mensa-app-wise23-24-gruppe-09" />
     </key>
   </component>
@@ -84,7 +84,7 @@
       <workItem from="1704327138905" duration="13578000" />
       <workItem from="1704390380404" duration="1457000" />
       <workItem from="1704391870886" duration="13444000" />
-      <workItem from="1704648381190" duration="24780000" />
+      <workItem from="1704648381190" duration="33100000" />
     </task>
     <task id="LOCAL-00001" summary="1. Commit in dem ich grundsätzlich die Struktur für das Backend wiedergeben möchte und auch bereits die ersten Endpunkte eingeführt wurden. &#10;&#10;Zu erreichen ist leider bisher nur der /mensa endpoint, die anderen funktionieren noch nicht, auch nach über 24 h fehlersuche nicht">
       <created>1704339293090</created>
@@ -135,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1704757033097</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Implementierung von einer ersten Version von CORS, leider noch ungetestet da das Frontend noch nicht soweit ist">
+      <created>1704846423149</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1704846423149</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,6 +168,7 @@
     <MESSAGE value="Post request eingerichtet für die mealreviews" />
     <MESSAGE value="implmentierung der restlichen Endpunkte (CRUD für mealreview und canteenreview)" />
     <MESSAGE value="Implementierung des https protokolls lokal mithilfe von mkcert" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementierung des https protokolls lokal mithilfe von mkcert" />
+    <MESSAGE value="Implementierung von einer ersten Version von CORS, leider noch ungetestet da das Frontend noch nicht soweit ist" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementierung von einer ersten Version von CORS, leider noch ungetestet da das Frontend noch nicht soweit ist" />
   </component>
 </project>
