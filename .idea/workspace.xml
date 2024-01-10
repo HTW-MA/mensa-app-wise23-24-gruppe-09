@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22281f8c-d4ab-428f-a4fa-2cfe0860a5e0" name="Changes" comment="implmentierung der restlichen Endpunkte (CRUD für mealreview und canteenreview)">
-      <change afterPath="$PROJECT_DIR$/server.cert" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server.key" afterDir="false" />
+    <list default="true" id="22281f8c-d4ab-428f-a4fa-2cfe0860a5e0" name="Changes" comment="Implementierung des https protokolls lokal mithilfe von mkcert">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/mensaController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/mensaController.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,30 +38,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/prog_mob_Anwen_Frontend/mensa-app-wise23-24-gruppe-09/index.js",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\prog_mob_Anwen_Frontend\mensa-app-wise23-24-gruppe-09" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="myconfig" type="NodeJSConfigurationType" path-to-js-file="index.js" working-dir="$PROJECT_DIR$">
+      <envs>
+        <env name="X-API-KEY" value="EiEBfRSBEgEwo6XYAXupp6JQ0RuF0/aRyLSX2HHMF6jWLTsDaOREOluwS4tyPEcKHuNMLdzYT2pB+CkZhvRedw8/6OIw6tjh2nFsYab1BYMP07HhEU3yzgksDXQBZnqpOc00fRPEGkjkSZ1pnG5JfUkiofCFU01qpRoLhQQgy9hcfbGrIiHZUyDtCwxJgk14TKdcRfc/XEzMFXkBPQjLokZxthHRZhsRP1qoiq1OzP/5qiYv603w9NDjkLfRGVMddmoalZq2TEsQn3r4nT1cbK1FrR96FMoVDzcE007DRqlxKSs7A6U50yuIal+X7A048IwP+Az6rCcRRiwZHb5m+w==" />
+      </envs>
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -73,7 +84,7 @@
       <workItem from="1704327138905" duration="13578000" />
       <workItem from="1704390380404" duration="1457000" />
       <workItem from="1704391870886" duration="13444000" />
-      <workItem from="1704648381190" duration="17120000" />
+      <workItem from="1704648381190" duration="24780000" />
     </task>
     <task id="LOCAL-00001" summary="1. Commit in dem ich grundsätzlich die Struktur für das Backend wiedergeben möchte und auch bereits die ersten Endpunkte eingeführt wurden. &#10;&#10;Zu erreichen ist leider bisher nur der /mensa endpoint, die anderen funktionieren noch nicht, auch nach über 24 h fehlersuche nicht">
       <created>1704339293090</created>
@@ -117,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1704747559303</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Implementierung des https protokolls lokal mithilfe von mkcert">
+      <created>1704757033097</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1704757033097</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,6 +160,7 @@
     <MESSAGE value="Einrichten aller fehlender get Endpunkte (badge, menue, mealreview)" />
     <MESSAGE value="Post request eingerichtet für die mealreviews" />
     <MESSAGE value="implmentierung der restlichen Endpunkte (CRUD für mealreview und canteenreview)" />
-    <option name="LAST_COMMIT_MESSAGE" value="implmentierung der restlichen Endpunkte (CRUD für mealreview und canteenreview)" />
+    <MESSAGE value="Implementierung des https protokolls lokal mithilfe von mkcert" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementierung des https protokolls lokal mithilfe von mkcert" />
   </component>
 </project>

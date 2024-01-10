@@ -4,6 +4,7 @@ const express = require('express');
 const https = require('https');
 const fs = require('fs');
 
+const cors = require('cors');
 const app = express();
 const port = 3001;
 
@@ -13,6 +14,13 @@ const mensasRoute = require('./src/routes/mensaRoutes');
 const mealsRoute = require('./src/routes/meal.routes');
 const additivesRoute = require('./src/routes/additives.routes');
 
+//Verwendung von CORS, damit das Frontend auf das Backend zugreifen kann
+app.use(cors({
+    origin: 'https://localhost:3000',
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    credentials: true, // enable set cookie
+    optionsSuccessStatus: 204,
+}));
 //Verwende JSON
 app.use(express.json());
 // Verwende die Routen

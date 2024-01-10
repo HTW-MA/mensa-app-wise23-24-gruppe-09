@@ -1,6 +1,7 @@
 
 // mensaController.js
 
+
 const axios = require('axios');
 
 const MENSA_API_BASE_URL = 'https://mensa.gregorflachs.de/api/v1';
