@@ -20,7 +20,7 @@ const MainContent = () => {
   return (
     <div className="container">
       <img
-        src="/chicken-tikka-masala.JPG"
+        src="/Contine_Theke_Selbstbedienung_Studentin.jpg"
         alt="Logo"
         className="Photoo"
       />
