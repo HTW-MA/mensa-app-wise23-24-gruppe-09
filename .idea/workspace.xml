@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22281f8c-d4ab-428f-a4fa-2cfe0860a5e0" name="Changes" comment="Anpassung des Mensa endpunktes, sodass man jeden einzelnen Parameter ansteuern kann, aus mir noch unerfindlichen gründen funktioniert die id url nicht ganz, kann mir alle ausgeben lassen, aber nicht nach einer einzelnen suchen">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/mealController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/mealController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/mensaRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/mensaRoutes.js" afterDir="false" />
-    </list>
+    <list default="true" id="22281f8c-d4ab-428f-a4fa-2cfe0860a5e0" name="Changes" comment="Anpassung des meal Endpunkts mit allen parametern und einer funktion um alle Namen der Gerichte der API zu bekommen" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,7 +80,7 @@
       <workItem from="1704391870886" duration="13444000" />
       <workItem from="1704648381190" duration="34814000" />
       <workItem from="1705057786102" duration="2079000" />
-      <workItem from="1705505514229" duration="12399000" />
+      <workItem from="1705505514229" duration="12734000" />
     </task>
     <task id="LOCAL-00001" summary="1. Commit in dem ich grundsätzlich die Struktur für das Backend wiedergeben möchte und auch bereits die ersten Endpunkte eingeführt wurden. &#10;&#10;Zu erreichen ist leider bisher nur der /mensa endpoint, die anderen funktionieren noch nicht, auch nach über 24 h fehlersuche nicht">
       <created>1704339293090</created>
@@ -156,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1705595904510</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Anpassung des meal Endpunkts mit allen parametern und einer funktion um alle Namen der Gerichte der API zu bekommen">
+      <created>1705606735158</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1705606735158</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,6 +188,7 @@
     <MESSAGE value="Implementierung von einer ersten Version von CORS, leider noch ungetestet da das Frontend noch nicht soweit ist" />
     <MESSAGE value="Habe einen ersten Versuch einer angehängten DB für eine user authentification funktion implementiert, habe die funktionsweise auch durch Postman getestet und es funktioniert. ACHTUNG: in diesem commit sind sowohl cors als auch https auskommentiert, es scheint ein Problem mit meinem Zertifikat zu geben, welches man in der zukunft lösen muss" />
     <MESSAGE value="Anpassung des Mensa endpunktes, sodass man jeden einzelnen Parameter ansteuern kann, aus mir noch unerfindlichen gründen funktioniert die id url nicht ganz, kann mir alle ausgeben lassen, aber nicht nach einer einzelnen suchen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Anpassung des Mensa endpunktes, sodass man jeden einzelnen Parameter ansteuern kann, aus mir noch unerfindlichen gründen funktioniert die id url nicht ganz, kann mir alle ausgeben lassen, aber nicht nach einer einzelnen suchen" />
+    <MESSAGE value="Anpassung des meal Endpunkts mit allen parametern und einer funktion um alle Namen der Gerichte der API zu bekommen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Anpassung des meal Endpunkts mit allen parametern und einer funktion um alle Namen der Gerichte der API zu bekommen" />
   </component>
 </project>
