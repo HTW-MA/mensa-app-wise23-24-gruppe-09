@@ -21,12 +21,12 @@ const mealsRoute = require('./src/routes/meal.routes');
 const additivesRoute = require('./src/routes/additives.routes');
 
 //Verwendung von CORS, damit das Frontend auf das Backend zugreifen kann
-/*app.use(cors({
-    origin: 'https://localhost:3000',
+app.use(cors({
+    origin: 'http://localhost:3000',
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true, // enable set cookie
     optionsSuccessStatus: 204,
-}));*/
+}));
 
 app.post('/register', async (req, res) => {
     const { username, email, password } = req.body;

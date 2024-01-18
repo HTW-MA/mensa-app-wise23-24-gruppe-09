@@ -25,6 +25,18 @@ router.get('/', async (req, res) => {
     }
 });
 
+router.get('/canteen/names', async (req, res) => {
+    try {
+        console.log('Received request for /canteen/names');
+        const filters = req.query;
+        const mensaNames = await mensaController.fetchMensaNames(filters);
+        res.json(mensaNames);
+    } catch (error) {
+        console.error(error);
+        res.status(500).send('Internal Server Error');
+    }
+});
+
 router.get('/meals', async (req, res) => {
     try {
         console.log('Received request for /meals');

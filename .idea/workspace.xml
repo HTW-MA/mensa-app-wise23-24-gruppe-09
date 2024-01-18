@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22281f8c-d4ab-428f-a4fa-2cfe0860a5e0" name="Changes" comment="Implementierung von einer ersten Version von CORS, leider noch ungetestet da das Frontend noch nicht soweit ist">
-      <change afterPath="$PROJECT_DIR$/src/service/userService.js" afterDir="false" />
+    <list default="true" id="22281f8c-d4ab-428f-a4fa-2cfe0860a5e0" name="Changes" comment="Habe einen ersten Versuch einer angehängten DB für eine user authentification funktion implementiert, habe die funktionsweise auch durch Postman getestet und es funktioniert. ACHTUNG: in diesem commit sind sowohl cors als auch https auskommentiert, es scheint ein Problem mit meinem Zertifikat zu geben, welches man in der zukunft lösen muss">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/mensaController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/mensaController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/mensaRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/mensaRoutes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +44,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/prog_mob_Anwen_Frontend/mensa-app-wise23-24-gruppe-09/index.js",
+    "last_opened_file_path": "C:/prog_mob_anw/mensa-app-wise23-24-gruppe-09",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -54,7 +53,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "preferences.general",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -84,7 +83,9 @@
       <workItem from="1704327138905" duration="13578000" />
       <workItem from="1704390380404" duration="1457000" />
       <workItem from="1704391870886" duration="13444000" />
-      <workItem from="1704648381190" duration="33100000" />
+      <workItem from="1704648381190" duration="34814000" />
+      <workItem from="1705057786102" duration="2079000" />
+      <workItem from="1705505514229" duration="9505000" />
     </task>
     <task id="LOCAL-00001" summary="1. Commit in dem ich grundsätzlich die Struktur für das Backend wiedergeben möchte und auch bereits die ersten Endpunkte eingeführt wurden. &#10;&#10;Zu erreichen ist leider bisher nur der /mensa endpoint, die anderen funktionieren noch nicht, auch nach über 24 h fehlersuche nicht">
       <created>1704339293090</created>
@@ -142,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1704846423149</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Habe einen ersten Versuch einer angehängten DB für eine user authentification funktion implementiert, habe die funktionsweise auch durch Postman getestet und es funktioniert. ACHTUNG: in diesem commit sind sowohl cors als auch https auskommentiert, es scheint ein Problem mit meinem Zertifikat zu geben, welches man in der zukunft lösen muss">
+      <created>1704859197101</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1704859197101</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,6 +177,7 @@
     <MESSAGE value="implmentierung der restlichen Endpunkte (CRUD für mealreview und canteenreview)" />
     <MESSAGE value="Implementierung des https protokolls lokal mithilfe von mkcert" />
     <MESSAGE value="Implementierung von einer ersten Version von CORS, leider noch ungetestet da das Frontend noch nicht soweit ist" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementierung von einer ersten Version von CORS, leider noch ungetestet da das Frontend noch nicht soweit ist" />
+    <MESSAGE value="Habe einen ersten Versuch einer angehängten DB für eine user authentification funktion implementiert, habe die funktionsweise auch durch Postman getestet und es funktioniert. ACHTUNG: in diesem commit sind sowohl cors als auch https auskommentiert, es scheint ein Problem mit meinem Zertifikat zu geben, welches man in der zukunft lösen muss" />
+    <option name="LAST_COMMIT_MESSAGE" value="Habe einen ersten Versuch einer angehängten DB für eine user authentification funktion implementiert, habe die funktionsweise auch durch Postman getestet und es funktioniert. ACHTUNG: in diesem commit sind sowohl cors als auch https auskommentiert, es scheint ein Problem mit meinem Zertifikat zu geben, welches man in der zukunft lösen muss" />
   </component>
 </project>
