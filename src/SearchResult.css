@@ -1,0 +1,10 @@
+.result-text-field {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    text-align: right; /* Right-align the text */
+    /* Add any other necessary styles */
+}
+
