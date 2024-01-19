@@ -8,7 +8,7 @@ async function fetchMeals(filters) {
 
         // Construct query parameters based on the provided filters
         const queryParams = {};
-        if (filters.id) queryParams.ID = filters.id;
+        if (filters.ID) queryParams.ID = filters.ID;
         if (filters.loadingtype) queryParams.loadingtype = filters.loadingtype;
         if (filters.category) queryParams.category = filters.category;
         if (filters.name) queryParams.name = filters.name;
