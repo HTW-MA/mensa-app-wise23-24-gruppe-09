@@ -62,7 +62,8 @@ router.get('/badge', async (req, res) => {
 router.get('/menue', async (req, res) => {
     try {
         console.log('Received request for /menue');
-        const menue = await menueController.fetchMenue();
+        const filters = req.query || {}; // Ensure filters is defined, default to an empty object
+        const menue = await menueController.fetchMenue(filters);
         res.json(menue);
     } catch (error) {
         console.error(error);
