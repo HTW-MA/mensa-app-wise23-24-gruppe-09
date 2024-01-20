@@ -8,11 +8,11 @@
     background-color: #f8f8f8; /* Light background */
     border-radius: 20px; /* Rounded corners */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    margin-left: 1vh; /* Spacing from the left side of the page */
+    margin-left: 5vh; /* Spacing from the left side of the page */
     margin-top: 3vh;
-  }
-  
-  .menu-item {
+}
+
+.menu-item {
     background-color: #ffffff;
     padding: 2vh;
     border-radius: 15px;
@@ -48,7 +48,7 @@
 .menu-item-text p {
     font-size: 2vh; /* Set font size to 20px */
     font-style: italic; /* Make the text italic */
-    margin-top: 0; 
+    margin-top: 0;
     margin-left: 10vh;
 }
 /* Dark mode styles */

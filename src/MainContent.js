@@ -2,17 +2,15 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './MainContent.css';
-
-const MainContent = ({ onSearch }) => {
+const MainContent = () => {
     const [location, setLocation] = useState('');
     const navigate = useNavigate();
 
-    const handleSearch = async () => {
+    const handleSearch = () => {
         // Perform the location search logic here
         console.log('Searching for:', location);
 
-        // Trigger the search in the parent component (App)
-        await onSearch(location);
+        // You can replace the console.log with the actual logic for location search
 
         // Navigate to the search result page
         navigate('/SearchResult');
@@ -21,9 +19,9 @@ const MainContent = ({ onSearch }) => {
     return (
         <div className="container">
             <img
-                src="/Contine_Theke_Selbstbedienung_Studentin.jpg"
-                alt="Logo"
-                className="Photoo"
+                src="./1556_p1020274.4d76dca59dab546c6a676bf1cadc2a5e.jpg"
+                alt="Search"
+                className="search-image"
             />
             <input
                 type="text"
@@ -39,20 +37,7 @@ const MainContent = ({ onSearch }) => {
                 }}
             />
 
-            <div className="image-container">
-                <div className="image-with-text">
-                    <img src="/35942a8a6bb75dc1842582deb7168bf8-orange-location-marker-infographic.png" alt="Image 2" className="small-image" />
-                    <p className="image-text">Tell us who you are</p>
-                </div>
-                <div className="image-with-text">
-                    <img src="/calendar_14122.png" alt="Image 1" className="small-image" />
-                    <p className="image-text">Pick up your date</p>
-                </div>
-                <div className="image-with-text">
-                    <img src="/search-icon-md.png" alt="Image 3" className="small-image" />
-                    <p className="image-text">Enjoy your Meal!</p>
-                </div>
-            </div>
+
         </div>
     );
 };

@@ -13,7 +13,7 @@
 
 .star-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-template-columns: repeat(2, 1fr); /* 3 columns */
   gap: 5em; /* Reduced gap for a tighter layout */
   align-items: start; /* Align grid items to the top */
   padding: 1em; /* Padding around the grid */
@@ -22,12 +22,12 @@
 .star-item {
   position: relative;
   width: 100%; /* Full width of the column */
-  padding: 2vh; /* Padding inside the border */
+  padding: 5vh; /* Padding inside the border */
   box-sizing: border-box; /* Include padding in width/height calculations */
   background-color: #e8e8e8; /* Light grey background color */
   border: 1px solid #888; /* Border around each item */
   border-radius: 20px;
-  
+
 
 }
 .star-item:hover {
@@ -48,7 +48,12 @@
   width: 100%;
   height: 100%;
 }
-
+.star-text-container {
+  display: flex;
+  justify-content: space-between; /* Adjust as needed */
+  width: 100%;
+  margin-top: 1vh; /* Space above the text */
+}
 .star-photo {
   width: 25vh;
   height: 15vh;
@@ -59,11 +64,11 @@
 
 .star-title {
   text-align: center;
-  margin-top: 1vh;
+  margin-bottom: 1vh; /* Add margin below the title */
   font-size: 1.5em;
   color: #333;
   width: 100%;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .star-text-left {
@@ -77,6 +82,12 @@
 
 .star-text-right {
   font-size: 1em; /* Half the current size */
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-left: 1;
+  display: flex;
+  font-size: 1em; /* Half the current size */
+  margin-top: 2vh; /* Increased margin to move text further down */
+  align-items: flex-start;
 }
 
 body.dark-mode .star-grid-container {

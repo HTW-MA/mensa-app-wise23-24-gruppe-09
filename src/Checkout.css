@@ -3,18 +3,21 @@
     position: fixed;
     top: 10vh;
     right: 0;
-    width: 200px;
-    height: 100%;
+    width: 300px;
+    height: calc(90vh - 40px); /* Adjust height to fill screen minus top offset */
     background-color: #fff;
     box-shadow: -2px 0 5px 1px #FE6601;
     z-index: 1000;
-    overflow-y: auto;
     padding: 20px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
 }
-
+.checkout-items-container {
+    overflow-y: auto;
+    flex-grow: 1; /* Takes available space, leaving space for header and button */
+    margin-bottom: 20px; /* Space above the checkout button */
+}
 /* Style for the individual checkout items */
 .checkout-item {
     background-color: #f8f8f8; /* Light gray background for each item */
@@ -39,17 +42,16 @@
     padding: 10px 20px;
     font-size: 1rem;
     cursor: pointer;
-    margin-top: 20vh; /* Add some space between the last item and the button */
-    display: block; /* Ensuring the button is a block element */
+    /* Removed margin-top to avoid unnecessary space */
+    display: block;
+    width: 100%; /* Full width */
 }
 
 /* Style for the h1 inside the checkout */
 .checkout h1 {
     font-size: 2rem;
     margin-bottom: 20px; /* Increased space below the header */
-    color: rgb(5, 5, 5);
-    display: flex;
-    justify-content: center;
+    color: black;
 }
 
 /* Add hover effect to the button */
@@ -79,4 +81,54 @@
 
 .checkout.dark-mode h1 {
     color: white;
+}
+.picsss .image-with-text {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text */
+    border: solid 4px #FF8500; /* Border around the container */
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.picsss img {
+    width: 50%; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 20%; /* Rounded corners */
+}
+
+.picsss .item-name, .picsss .item-price {
+    font-size: 1rem; /* Adjust font size as needed */
+    color: #333; /* Paragraph text color */
+    margin: 10px 0; /* Space above and below the text */
+    /* Additional styling as needed */
+}
+
+/* Adjust this to control the layout better */
+.picsss {
+    display: flex;
+    flex-direction: column; /* Stack image/text block and additional text */
+    align-items: center; /* Center items horizontally */
+}
+
+/* Style for the main Basket text, if needed */
+.picsss > p:first-of-type {
+    /* Your styling for the main Basket text */
+    text-align: center;
+    /* Other styles */
+}
+.picsss p{
+    margin-top: 0px;
+    margin-left: 10px;
+}
+p{
+    margin-bottom: 10px ;
+    margin-left: 10px;
+
+}
+.paratotal{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: #FE6601 2px solid;
+    border-radius: 20px;
 }

@@ -1,5 +1,11 @@
 .container {
   text-align: center;
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center;
+  align-items: center;
+  height: 20vh; /* Adjust height as needed */
+  margin-top: 10vh;
 }
 
 .search-box {
@@ -8,53 +14,35 @@
   border: 1px solid #ccc;
   border-radius: 10px;
   padding: 10px;
-  margin-top: 50px;
   font-size: 16px;
   box-sizing: border-box;
-  display: block;
-  margin-left: 10%;
-  margin-bottom: 15vh;
+  /* Removed margin-left, margin-top, and margin-bottom */
 }
 
+/* Adjusted styles for .Photoo to work with flexbox */
 .Photoo {
-  width: 800px;
+  width: 750px;
   height: 700px;
-  flex-shrink: 0;
   border-radius: 50%;
-  position: fixed;
-  top: 60%;
-  right: 5%;
-  transform: translate(40%, -40%);
+  /* Removed position, top, right, and transform properties */
 }
 
 /* Style for the image container */
 .image-container {
   display: flex;
-  justify-content: start; /* Adjust spacing as needed */
-  margin-top: 20px; /* Adjust spacing as needed */
-  justify-content: center;
-  margin-right: 250px;
-}
-
-/* Style for small images */
-.small-image {
-  width: 70px; /* Adjust size as needed */
-  margin-right: 200px; /* Adjust spacing as needed */
-  }
-  .image-text{
-    font-size: 20px;
-    margin-top: 20px;
-    margin-left:-200px;
-    text-align: center;
-  }
-  /* Regular styles */
-.some-component {
-  background-color: white;
-  color: black;
+  justify-content: center; /* Center the images horizontally */
+  align-items: center; /* Center the images vertically */
+  /* Removed margin-top and margin-right */
 }
 
 /* Dark mode styles */
 .dark-mode .some-component {
   background-color: #222;
   color: #ddd;
+}
+.search-image {
+  width: 250px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 20px; /* Space between image and search box */
+  border-radius: 20%;
 }

@@ -9,18 +9,17 @@
     border: 1px solid #ccc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     z-index: 999;
-  }
-  
-  .setting-item {
+}
+
+.setting-item {
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
-  }
-  
-  button {
+}
+
+button {
     cursor: pointer;
     background: none;
     border: none;
     color: #007bff; /* Blue color */
-  }
-  
+}

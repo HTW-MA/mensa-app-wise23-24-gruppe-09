@@ -5,7 +5,7 @@
     margin-top: 30vh;
     margin-left: 50vh; /* Adjust as needed for spacing from the left */
 }
-  
+
 .search-bar {
     padding: 0.5em;
     width: 20%; /* Adjust the width as needed */
@@ -19,5 +19,4 @@
 .search-bar-container :hover {
     transform: translateY(-5px);
     transition: transform 0.3s ease-in-out;
-
 }
