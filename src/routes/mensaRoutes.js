@@ -25,6 +25,19 @@ router.get('/', async (req, res) => {
     }
 });
 
+// New route for fetching specific mensa information
+router.get('/specific', async (req, res) => {
+    try {
+        console.log('Received request for /mensas/specific');
+        const filters = req.query;
+        const specificMensaInfo = await mensaController.fetchSpecificMensaInfo(filters);
+        res.json(specificMensaInfo);
+    } catch (error) {
+        console.error(error);
+        res.status(500).send('Internal Server Error');
+    }
+});
+
 router.get('/meals', async (req, res) => {
     try {
         console.log('Received request for /meals');

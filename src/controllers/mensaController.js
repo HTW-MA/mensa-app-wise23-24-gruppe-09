@@ -56,4 +56,31 @@ async function fetchMensas(filters) {
     }
 }
 
-module.exports = { fetchMensas,};
+async function fetchSpecificMensaInfo(filters) {
+    try {
+        // Use the fetchMensas function to get the full response
+        const response = await fetchMensas(filters);
+
+        // Map the full response to include only the required information
+        const specificMensaInfo = response.map(mensa => {
+            return {
+                name: mensa.name,
+                street: mensa.address.street,
+                city: mensa.address.city,
+                zipcode: mensa.address.zipcode,
+                district: mensa.address.district,
+                email: mensa.contactInfo.email,
+                phone: mensa.contactInfo.phone,
+            };
+        });
+
+        return specificMensaInfo;
+    } catch (error) {
+        console.error('Error fetching specific mensa info:', error);
+        throw error;
+    }
+}
+
+module.exports = { fetchMensas, fetchSpecificMensaInfo };
+
+
