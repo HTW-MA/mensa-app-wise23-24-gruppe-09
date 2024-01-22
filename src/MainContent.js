@@ -1,20 +1,50 @@
-// MainContent.js
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './MainContent.css';
+import SearchResult from './SearchResult';
+
 const MainContent = () => {
     const [location, setLocation] = useState('');
+    const [searchResults, setSearchResults] = useState([]);
     const navigate = useNavigate();
 
-    const handleSearch = () => {
-        // Perform the location search logic here
-        console.log('Searching for:', location);
+    useEffect(() => {
+        console.log('Search results from MainContent:', searchResults);
+        // Navigate to the search result page only if there are results
+        if (searchResults.length > 0) {
+            const firstName = searchResults[0].name;
+            console.log('Name der Mensa:', firstName);
+            navigate('/SearchResult');
+        }
+        console.log('Component in MainContent.js mounted or updated');
+    }, [searchResults, navigate]);
 
-        // You can replace the console.log with the actual logic for location search
+    const handleSearch = async () => {
+        try {
+            const response = await fetch(`http://localhost:3001/specific?name=${encodeURIComponent(location)}`, {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            });
 
-        // Navigate to the search result page
-        navigate('/SearchResult');
+            if (response.ok) {
+                const data = await response.json();
+                console.log('Data from backend:', data);
+                setSearchResults(data);
+
+                // Navigate to the search result page only if there are results
+                if (data.length > 0) {
+                    navigate('/SearchResult');
+                }
+            } else {
+                console.error('Error searching for locations:', response.statusText);
+            }
+        } catch (error) {
+            console.error('Error searching for locations:', error.message);
+        }
     };
+
 
     return (
         <div className="container">
@@ -37,7 +67,8 @@ const MainContent = () => {
                 }}
             />
 
-
+            {/* Render SearchResult only if there are search results */}
+            {searchResults.length > 0 && <SearchResult searchResults={searchResults} />}
         </div>
     );
 };

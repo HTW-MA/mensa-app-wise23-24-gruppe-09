@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import Sidebar from './Sidebar'; // Import your Sidebar component
-import SearchBar from './SearchBar'; // Import your SearchBar component 
+import SearchBar from './SearchBar'; // Import your SearchBar component
 import StarGrid from './StarGrid'; // Import your StarGrid component
 import LocationIndicator from './LocationIndicator';
 import FilterComponent from './FilterComponent';
-const SearchResult = () => {
+const SearchResult = ({ searchResults }) => {
     const [searchTerm, setSearchTerm] = useState('');
     const [filteredStars, setFilteredStars] = useState([]);
     const [location, setLocation] = useState('Berlin');
@@ -41,7 +41,8 @@ const SearchResult = () => {
                 }
             });
         }
-
+        console.log('searchResult in SearchResults useEffect hook',searchResults);
+        console.log('Component mounted or updated');
         setFilteredStars(results);
     }, [searchTerm, filter]);
 
@@ -51,13 +52,14 @@ const SearchResult = () => {
     const handleFilterChange = filterValue => {
         setFilter(filterValue);
     };
+    console.log('searchResult in SearchResults',searchResults);
     return (
         <div className="search-result-page">
             <Sidebar />
             <div className="content-container">
 
                 <LocationIndicator location={location} />
-                <StarGrid stars={filteredStars} />
+                <StarGrid stars={filteredStars} searchResults={searchResults} />
             </div>
         </div>
     );

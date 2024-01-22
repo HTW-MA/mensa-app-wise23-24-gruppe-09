@@ -50,7 +50,9 @@
 }
 .star-text-container {
   display: flex;
-  justify-content: space-between; /* Adjust as needed */
+  flex-direction: column; /* Display text items in a column */
+  justify-content: center;
+  align-items: center;
   width: 100%;
   margin-top: 1vh; /* Space above the text */
 }
@@ -71,23 +73,13 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.star-text-left {
+.star-text-item {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  margin-left: 0;
+  margin-top: 1vh; /* Increased margin between text items */
+  font-size: 1em;
   display: flex;
-  font-size: 1em; /* Half the current size */
-  margin-top: 2vh; /* Increased margin to move text further down */
-  align-items: flex-start;
-}
-
-.star-text-right {
-  font-size: 1em; /* Half the current size */
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  margin-left: 1;
-  display: flex;
-  font-size: 1em; /* Half the current size */
-  margin-top: 2vh; /* Increased margin to move text further down */
-  align-items: flex-start;
+  align-items: center;
+  text-align: center; /* Center text */
 }
 
 body.dark-mode .star-grid-container {
