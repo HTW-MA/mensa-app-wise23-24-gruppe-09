@@ -20,6 +20,10 @@ const StarGrid = ({ stars, searchResults }) => {
         // Fallback if searchResults is neither an array nor an object
         console.log('searchResults has an unexpected type:', searchResults);
     }
+    const displayedResult = Array.isArray(searchResults) && searchResults.length > 0
+        ? searchResults[0]
+        : null;
+
     return (
         <div className="star-grid-container">
             <div className="star-grid">
@@ -31,28 +35,17 @@ const StarGrid = ({ stars, searchResults }) => {
                         <div className="star-item">
                             <div className="star-item-wrapper">
                                 <div className="star-title">
-                                    {searchResults ? searchResults.name : 'Mensa ASH Berlin Hellersdorf'}
+                                    {displayedResult ? displayedResult.name : 'Mensa ASH Berlin Hellersdorf'}
                                 </div>
                                 <img src={star.photo} alt={`Star ${index + 1}`} className="star-photo" />
                                 <div className="star-text-container">
-                                    <p className="star-text-item">
-                                        {searchResults ? searchResults.street : 'Alice-Salomon-Platz 5'}
-                                    </p>
-                                    <p className="star-text-item">
-                                        {searchResults ? searchResults.city : 'Berlin'}
-                                    </p>
-                                    <p className="star-text-item">
-                                        {searchResults ? searchResults.zipcode : '12627'}
-                                    </p>
-                                    <p className="star-text-item">
-                                        {searchResults ? searchResults.district : 'Marzahn-Hellersdorf'}
-                                    </p>
-                                    <p className="star-text-item">
-                                        {searchResults ? searchResults.phone : '+4930939397721'}
-                                    </p>
-                                    <p className="star-text-item">
-                                        {searchResults ? searchResults.email : 'mensen@stw.berlin'}
-                                    </p>
+                                    {/* Access properties based on displayedResult */}
+                                    <p className="star-text-item">{displayedResult ? displayedResult.street : 'Alice-Salomon-Platz 5'}</p>
+                                    <p className="star-text-item">{displayedResult ? displayedResult.city : 'Berlin'}</p>
+                                    <p className="star-text-item">{displayedResult ? displayedResult.zipcode : '12627'}</p>
+                                    <p className="star-text-item">{displayedResult ? displayedResult.district : 'Marzahn-Hellersdorf'}</p>
+                                    <p className="star-text-item">{displayedResult ? displayedResult.phone : '+4930939397721'}</p>
+                                    <p className="star-text-item">{displayedResult ? displayedResult.email : 'mensen@stw.berlin'}</p>
                                 </div>
                             </div>
                         </div>

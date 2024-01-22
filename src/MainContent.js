@@ -11,13 +11,14 @@ const MainContent = () => {
     useEffect(() => {
         console.log('Search results from MainContent:', searchResults);
         // Navigate to the search result page only if there are results
+        console.log('Search results updated:', searchResults);
         if (searchResults.length > 0) {
             const firstName = searchResults[0].name;
             console.log('Name der Mensa:', firstName);
             navigate('/SearchResult');
         }
         console.log('Component in MainContent.js mounted or updated');
-    }, [searchResults, navigate]);
+    }, [searchResults]);
 
     const handleSearch = async () => {
         try {

@@ -42,9 +42,9 @@ const SearchResult = ({ searchResults }) => {
             });
         }
         console.log('searchResult in SearchResults useEffect hook',searchResults);
-        console.log('Component mounted or updated');
+        console.log('Component mounted or updated in SearchResults.js');
         setFilteredStars(results);
-    }, [searchTerm, filter]);
+    }, [searchTerm, filter, ]);
 
     const handleSearch = term => {
         setSearchTerm(term);
