@@ -1,25 +1,11 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './MainContent.css';
-import SearchResult from './SearchResult';
 
 const MainContent = () => {
     const [location, setLocation] = useState('');
-    const [searchResults, setSearchResults] = useState([]);
     const navigate = useNavigate();
-
-    useEffect(() => {
-        console.log('Search results from MainContent:', searchResults);
-        // Navigate to the search result page only if there are results
-        console.log('Search results updated:', searchResults);
-        if (searchResults.length > 0) {
-            const firstName = searchResults[0].name;
-            console.log('Name der Mensa:', firstName);
-            navigate('/SearchResult');
-        }
-        console.log('Component in MainContent.js mounted or updated');
-    }, [searchResults]);
-
+    const [searchResults, setSearchResults] = useState([]);
     const handleSearch = async () => {
         try {
             const response = await fetch(`http://localhost:3001/specific?name=${encodeURIComponent(location)}`, {
@@ -36,7 +22,7 @@ const MainContent = () => {
 
                 // Navigate to the search result page only if there are results
                 if (data.length > 0) {
-                    navigate('/SearchResult');
+                    navigate('/SearchResult', { state: { backendData: data } });
                 }
             } else {
                 console.error('Error searching for locations:', response.statusText);
@@ -45,7 +31,6 @@ const MainContent = () => {
             console.error('Error searching for locations:', error.message);
         }
     };
-
 
     return (
         <div className="container">
@@ -67,9 +52,6 @@ const MainContent = () => {
                     }
                 }}
             />
-
-            {/* Render SearchResult only if there are search results */}
-            {searchResults.length > 0 && <SearchResult searchResults={searchResults} />}
         </div>
     );
 };
