@@ -1,0 +1,28 @@
+{
+  "name": "my-simple-app",
+  "short_name": "mensa-app",
+  "description": "A small app to get information about mensas and their meals in Berlin",
+  "start_url": "http://localhost:3000/",
+  "display": "fullscreen",
+  "background_color": "#808080",
+  "theme_color": "#FFA500",
+  "icons": [
+    {
+      "src": "public/favicon.ico",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "public/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "public/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "orientation": "portrait",
+  "scope": "/"
+}
