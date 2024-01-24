@@ -13,12 +13,9 @@ async function fetchMensas(filters) {
 
         // Construct query parameters based on the provided filters
         const queryParams = {};
-        // ID funktioniert nicht, warum weiß ich nicht
         if (filters.ID) queryParams.ID = filters.ID;
         if (filters.loadingtype) queryParams.loadingtype = filters.loadingtype;
-        // name funktioniert
         if (filters.name) queryParams.name = filters.name;
-        // zipcode funktioniert
         if (filters.zipcode) queryParams.zipcode = filters.zipcode;
         if (filters.district) queryParams.district = filters.district;
         if (typeof filters.clickandcollect === 'boolean') queryParams.clickandcollect = filters.clickandcollect;
@@ -71,6 +68,7 @@ async function fetchSpecificMensaInfo(filters) {
                 district: mensa.address.district,
                 email: mensa.contactInfo.email,
                 phone: mensa.contactInfo.phone,
+                ID: mensa.id
             };
         });
 

@@ -27,4 +27,58 @@ async function fetchMenue(filters) {
     }
 }
 
-module.exports = { fetchMenue };
+async function fetchSpecificMenueInfo(filters) {
+    try {
+        const response = await fetchMenue(filters);
+
+        // Check if response is an array of menus
+        if (!Array.isArray(response)) {
+            console.error('Invalid response format:', response);
+            throw new Error('Invalid response format');
+        }
+
+        const specificMenueInfo = [];
+
+        // Iterate over each menu
+        response.forEach(menu => {
+            // Check if meals array is present in the menu
+            if (menu.meals && Array.isArray(menu.meals)) {
+                // Process each meal in the menu
+                menu.meals.forEach(menuItem => {
+                    // Check if prices, additives, and badges arrays are defined
+                    const prices = menuItem.prices && Array.isArray(menuItem.prices)
+                        ? menuItem.prices.map(price => ({
+                            priceType: price.priceType,
+                            price: price.price,
+                        }))
+                        : [];
+
+                    const additives = menuItem.additives && Array.isArray(menuItem.additives)
+                        ? menuItem.additives.map(additive => additive.text)
+                        : [];
+
+                    const badges = menuItem.badges && Array.isArray(menuItem.badges)
+                        ? menuItem.badges.map(badge => badge.name)
+                        : [];
+
+                    // Add the processed meal details to specificMenueInfo array
+                    specificMenueInfo.push({
+                        date: menu.date,
+                        mealName: menuItem.name,
+                        prices,
+                        category: menuItem.category,
+                        additives,
+                        badges,
+                    });
+                });
+            }
+        });
+
+        return specificMenueInfo;
+    } catch (error) {
+        console.error('Error fetching specific menu info:', error);
+        throw error;
+    }
+}
+
+module.exports = { fetchMenue, fetchSpecificMenueInfo };

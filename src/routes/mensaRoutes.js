@@ -84,6 +84,19 @@ router.get('/menue', async (req, res) => {
     }
 });
 
+// Route for fetching specific menu information
+router.get('/specific-menue-info', async (req, res) => {
+    try {
+        console.log('Received request for /specific-menue-info');
+        const filters = req.query || {}; // Ensure filters is defined, default to an empty object
+        const specificMenueInfo = await menueController.fetchSpecificMenueInfo(filters);
+        res.json(specificMenueInfo);
+    } catch (error) {
+        console.error(error);
+        res.status(500).send('Internal Server Error');
+    }
+});
+
 router.get('/mealreview', async (req, res) => {
     try {
         console.log('Received request for /mealreview');
