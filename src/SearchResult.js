@@ -33,9 +33,9 @@ const SearchResult = () => {
 
             return star;
         });
-
+        console.log('Dynamic Results:', dynamicResults);
         // Combine dynamic results with static data
-        const allStarsData = [...staticStarsData, ...dynamicResults];
+        const allStarsData = dynamicResults;
 
         let results = allStarsData.filter(star =>
             star.title.toLowerCase().includes(searchTerm.toLowerCase())
@@ -55,9 +55,9 @@ const SearchResult = () => {
                 }
             });
         }
-
+        console.log('Results:', results);
         setFilteredStars(results);
-    }, [searchTerm, filter, backendData, staticStarsData]);
+    }, [searchTerm, filter, backendData]);
 
     const handleSearch = term => {
         setSearchTerm(term);
@@ -65,6 +65,10 @@ const SearchResult = () => {
     const handleFilterChange = filterValue => {
         setFilter(filterValue);
     };
+    console.log('Static Stars Data:', staticStarsData);
+    console.log('Backend Data:', backendData);
+    console.log('Filtered Stars in SearchResult.js:', filteredStars);
+
 
     return (
         <div className="search-result-page">

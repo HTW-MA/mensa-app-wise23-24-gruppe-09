@@ -1,18 +1,21 @@
-// StarGrid.js
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, } from 'react-router-dom';
 import './StarGrid.css';
 
 const StarGrid = ({ stars }) => {
-    console.log(stars);
+    console.log('Stars in StarGrid.js:', stars);
     return (
         <div className="star-grid-container">
             <div className="star-grid">
                 {stars.map((star, index) => (
-                    <Link key={index} to={{
-                        pathname: `/details/${star.title}`,
-                        state: { imageUrl: star.photo } // Pass the image URL in the state
-                    }} className={`star-item-link ${star.border ? 'with-border' : ''}`}>
+                    <Link
+                        key={index}
+                        to={star.ID ? {
+                            pathname: `/details/${encodeURIComponent(star.title)}`, // Use encodeURIComponent to handle special characters in the title
+                            state: { imageUrl: star.photo, canteenId: star.ID }
+                        } : '/' /* Provide a fallback path or handle the case when canteenId is empty */}
+                        className={`star-item-link ${star.border ? 'with-border' : ''}`}
+                    >{console.log(`Link created for star with ID: ${star.ID}`)}
                         <div className="star-item">
                             <div className="star-item-wrapper">
                                 <img src={star.photo} alt={`Star ${index + 1}`} className="star-photo" />
