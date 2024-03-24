@@ -10,7 +10,7 @@ const FoodMenu = ({ onAddToCheckout, canteenId }) => {
   useEffect(() => {
     const fetchMenuData = async () => {
       try {
-        const response = await fetch(`http://localhost:3001/specific-menue-info?canteenId=${canteenId}`);
+        const response = await fetch(`https://localhost:3001/specific-menue-info?canteenId=${canteenId}`);
         const specificMenuInfo = await response.json();
 
         setMenuItems(specificMenuInfo);
@@ -31,7 +31,7 @@ const FoodMenu = ({ onAddToCheckout, canteenId }) => {
         {menuItems.map((item) => (
             <div key={item.id} className="menu-item">
               <div className="menu-item-text">
-                <h2>{item.mealName} - ${item.prices[0].price.toFixed(2)}</h2>
+                <h2>{item.mealName} - {item.prices && item.prices[0] ? `$${item.prices[0].price.toFixed(2)}` : 'Price not available'}</h2>
                 <p>{item.description}</p>
               </div>
               <img src={item.image} alt={item.mealName} className="menu-item-image" />

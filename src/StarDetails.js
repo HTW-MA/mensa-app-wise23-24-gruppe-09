@@ -12,8 +12,8 @@ const StarDetails = () => {
     const location = useLocation();
     console.log('Location in StarDetails:', location);
     console.log('Location state in StarDetails:', location.state);
-    const imageUrl = location.state?.imageUrl;
-    const canteenId = location.state?.canteenId;
+    const imageUrl = new URLSearchParams(window.location.search).get('imageUrl');
+    const canteenId = new URLSearchParams(window.location.search).get('canteenId');
     console.log('CanteenId in StarDetails:', canteenId);
     const [checkoutItems, setCheckoutItems] = useState([]);
 

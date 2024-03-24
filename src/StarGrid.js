@@ -10,12 +10,10 @@ const StarGrid = ({ stars }) => {
                 {stars.map((star, index) => (
                     <Link
                         key={index}
-                        to={star.ID ? {
-                            pathname: `/details/${encodeURIComponent(star.title)}`, // Use encodeURIComponent to handle special characters in the title
-                            state: { imageUrl: star.photo, canteenId: star.ID }
-                        } : '/' /* Provide a fallback path or handle the case when canteenId is empty */}
+                        to={star.ID ? `/details/${encodeURIComponent(star.title)}?imageUrl=${encodeURIComponent(star.photo)}&canteenId=${star.ID}` : '/'}
                         className={`star-item-link ${star.border ? 'with-border' : ''}`}
-                    >{console.log(`Link created for star with ID: ${star.ID}`)}
+                    >
+                        {console.log(`Link created for star with ID: ${star.ID}`)}
                         <div className="star-item">
                             <div className="star-item-wrapper">
                                 <img src={star.photo} alt={`Star ${index + 1}`} className="star-photo" />
