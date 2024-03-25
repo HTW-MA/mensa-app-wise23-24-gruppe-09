@@ -11,7 +11,8 @@ const Checkout = ({ items }) => {
 
     // Ensures that items is always an array to prevent errors.
     const safeItems = items || [];
-
+    console.log('Safe Items', safeItems);
+    console.log('Safe Items Length:', safeItems.length);
     // The main component rendering.
     return (
         <div className={`checkout ${darkMode ? 'dark-mode' : ''}`}>
@@ -19,17 +20,19 @@ const Checkout = ({ items }) => {
 
             {/* Container for the checkout items */}
             <div className="checkout-items-container">
+
                 {/* Maps over the items and displays each one, if any */}
                 {safeItems.length > 0 ? (
                     safeItems.map((item, index) => {
                         // Log the mealName for each item
                         console.log('Meal Name:', item.mealName);
                         console.log('Price:', item.prices[0].price);
+                        console.log('safe items in condition:', safeItems);
                         return (
                             <div key={index} className="checkout-item">
                                 {/* Item name and price */}
-                                <p className="item-name">{item.mealName}</p>
-                                <p className="item-price">${item.prices[0].price.toFixed(2)}</p>
+                                <p>{item.mealName}</p>
+                                <p>${item.prices[0].price.toFixed(2)}</p>
                             </div>
                         );
                     })
