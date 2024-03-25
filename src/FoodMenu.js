@@ -25,7 +25,6 @@ const FoodMenu = ({ onAddToCheckout, canteenId }) => {
   }, [canteenId]);
 
   const menuClassName = darkMode ? 'food-menu dark-mode' : 'food-menu';
-
   return (
       <div className={menuClassName}>
         {menuItems.map((item) => (

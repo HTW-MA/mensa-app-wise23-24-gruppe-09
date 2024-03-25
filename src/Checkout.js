@@ -21,13 +21,18 @@ const Checkout = ({ items }) => {
             <div className="checkout-items-container">
                 {/* Maps over the items and displays each one, if any */}
                 {safeItems.length > 0 ? (
-                    safeItems.map((item, index) => (
-                        <div key={index} className="checkout-item">
-                            {/* Item name and price */}
-                            <span>{item.name}</span>
-                            <span>${item.price.toFixed(2)}</span>
-                        </div>
-                    ))
+                    safeItems.map((item, index) => {
+                        // Log the mealName for each item
+                        console.log('Meal Name:', item.mealName);
+                        console.log('Price:', item.prices[0].price);
+                        return (
+                            <div key={index} className="checkout-item">
+                                {/* Item name and price */}
+                                <p className="item-name">{item.mealName}</p>
+                                <p className="item-price">${item.prices[0].price.toFixed(2)}</p>
+                            </div>
+                        );
+                    })
                 ) : (
                     // Message displayed if no items are in the basket
                     <div className="picsss">
