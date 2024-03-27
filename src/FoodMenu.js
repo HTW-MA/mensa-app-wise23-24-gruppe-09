@@ -13,7 +13,11 @@ const FoodMenu = ({ onAddToCheckout, canteenId }) => {
         const response = await fetch(`https://localhost:3001/specific-menue-info?canteenId=${canteenId}`);
         const specificMenuInfo = await response.json();
 
-        setMenuItems(specificMenuInfo);
+        const currentDate = new Date().toISOString().split('T')[0];
+        const filteredMenuItems = specificMenuInfo.filter(item => item.date >= currentDate);
+
+        setMenuItems(filteredMenuItems);
+        console.log('Alle Menues:',filteredMenuItems);
       } catch (error) {
         console.error('Error fetching menu data:', error);
       }
