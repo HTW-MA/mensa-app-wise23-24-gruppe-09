@@ -8,7 +8,7 @@ const MainContent = () => {
     const [searchResults, setSearchResults] = useState([]);
     const handleSearch = async () => {
         try {
-            const response = await fetch(`https://localhost:3001/specific?name=${encodeURIComponent(location)}`, {
+            const response = await fetch(`http://localhost:3001/specific?name=${encodeURIComponent(location)}`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',

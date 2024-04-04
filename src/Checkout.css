@@ -7,14 +7,14 @@
     height: calc(90vh - 40px); /* Adjust height to fill screen minus top offset */
     background-color: #fff;
     box-shadow: -2px 0 5px 1px #FE6601;
-    z-index: 1000;
+    z-index: 2;
     padding: 20px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
 }
 .checkout-items-container {
-    overflow-y: auto;
+    /*overflow-y: auto; */
     flex-grow: 1; /* Takes available space, leaving space for header and button */
     margin-bottom: 20px; /* Space above the checkout button */
 }
@@ -28,6 +28,7 @@
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for each item */
+    z-index: 1;
 }
 
 /* Style for the checkout button container */

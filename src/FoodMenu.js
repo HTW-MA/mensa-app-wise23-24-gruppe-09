@@ -10,7 +10,7 @@ const FoodMenu = ({ onAddToCheckout, canteenId }) => {
   useEffect(() => {
     const fetchMenuData = async () => {
       try {
-        const response = await fetch(`https://localhost:3001/specific-menue-info?canteenId=${canteenId}`);
+        const response = await fetch(`http://localhost:3001/specific-menue-info?canteenId=${canteenId}`);
         const specificMenuInfo = await response.json();
 
         const currentDate = new Date().toISOString().split('T')[0];

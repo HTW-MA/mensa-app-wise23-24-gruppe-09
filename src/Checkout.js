@@ -39,9 +39,9 @@ const Checkout = ({ items }) => {
                 ) : (
                     // Message displayed if no items are in the basket
                     <div className="picsss">
-                        <p>Basket</p>
+
                         <div className="image-with-text">
-                            <p className="item-name">burger</p>
+
                             <img src="/classic-burger,id=ba2c5be1,b=lecker,w=1200,rm=sk.jpeg" alt="No items in basket"/>
                             <p className="item-price">5.00$</p>
                         </div>
