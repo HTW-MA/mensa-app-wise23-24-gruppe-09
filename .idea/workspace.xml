@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22281f8c-d4ab-428f-a4fa-2cfe0860a5e0" name="Changes" comment="Anpassung der id Abfrage in mensaController.js und in mealController.js von lowercase zu uppercase">
+    <list default="true" id="22281f8c-d4ab-428f-a4fa-2cfe0860a5e0" name="Changes" comment="Anpassung des menueController.js, sodass er spezifische informationen vom backend abrufen kann">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/mensaController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/mensaController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/menueController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/menueController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/mensaRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/mensaRoutes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +42,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/prog_mob_Anwen_Frontend/mensa-app-wise23-24-gruppe-09&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/prog_mob_anw/mensa-app-wise23-24-gruppe-09&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -91,7 +89,13 @@
       <workItem from="1705750468923" duration="5094000" />
       <workItem from="1705827395926" duration="4100000" />
       <workItem from="1705960975901" duration="7603000" />
-      <workItem from="1706047592661" duration="13465000" />
+      <workItem from="1706047592661" duration="14365000" />
+      <workItem from="1706203364466" duration="2347000" />
+      <workItem from="1708791916755" duration="18000" />
+      <workItem from="1711135648023" duration="1923000" />
+      <workItem from="1711225648694" duration="4718000" />
+      <workItem from="1712245306132" duration="920000" />
+      <workItem from="1712246770271" duration="1721000" />
     </task>
     <task id="LOCAL-00001" summary="1. Commit in dem ich grundsätzlich die Struktur für das Backend wiedergeben möchte und auch bereits die ersten Endpunkte eingeführt wurden. &#10;&#10;Zu erreichen ist leider bisher nur der /mensa endpoint, die anderen funktionieren noch nicht, auch nach über 24 h fehlersuche nicht">
       <created>1704339293090</created>
@@ -191,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1705671826814</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Anpassung des menueController.js, sodass er spezifische informationen vom backend abrufen kann">
+      <created>1706124735940</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1706124735940</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,6 +235,7 @@
     <MESSAGE value="changes in xml" />
     <MESSAGE value="Implementierung aller parameter im menue Endpunkt und anpassung der route router.get(/menue), sodass filter nicht undefined ist, welches in vorherigen iterationen zu einem Fehler geführt hat" />
     <MESSAGE value="Anpassung der id Abfrage in mensaController.js und in mealController.js von lowercase zu uppercase" />
-    <option name="LAST_COMMIT_MESSAGE" value="Anpassung der id Abfrage in mensaController.js und in mealController.js von lowercase zu uppercase" />
+    <MESSAGE value="Anpassung des menueController.js, sodass er spezifische informationen vom backend abrufen kann" />
+    <option name="LAST_COMMIT_MESSAGE" value="Anpassung des menueController.js, sodass er spezifische informationen vom backend abrufen kann" />
   </component>
 </project>

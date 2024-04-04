@@ -2,7 +2,7 @@
 //auswählen des Express frameworks
 const express = require('express');
 //auswählen des Internet Protokolls
-//const https = require('https');
+const https = require('https');
 const fs = require('fs');
 
 
@@ -11,7 +11,7 @@ const cors = require('cors');
 const {queryDatabase} = require ('./src/database/userDB');
 const { registerUserService } = require('./src/service/userService');
 const app = express();
-const port = 3001;
+const port = process.env.PORT || 3001;
 // Verwende JSON
 app.use(express.json());
 
@@ -53,11 +53,11 @@ const privateKey = fs.readFileSync('server.key','utf8');
 const certificate = fs.readFileSync('server.cert', 'utf8');
 const credentials = { key: privateKey, cert: certificate };
 
-/*const httpsServer = https.createServer(credentials, app);
+const httpsServer = https.createServer(credentials, app);
 httpsServer.listen(port, () => {
-    console.log(`Server listening at https://localhost:${port}`);
-});*/
-const httpServer = app.listen(port, () => {
-    console.log(`Server listening at http://localhost:${port}`);
+    console.log(`Server listening at port ${port}`);
 });
+/*const httpServer = app.listen(port, () => {
+    console.log(`Server listening at http://localhost:${port}`);
+});*/
 
