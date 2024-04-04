@@ -18,6 +18,7 @@ const StarDetails = () => {
     const [checkoutItems, setCheckoutItems] = useState([]);
 
     const handleAddToCheckout = (item) => {
+        console.log('Adding item to checkout in StarDetails:', item);
         setCheckoutItems([...checkoutItems, item]);
     };
 
