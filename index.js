@@ -14,7 +14,7 @@ const additivesRoute = require('./src/routes/additives.routes');
 
 // Enable CORS
 app.use(cors({
-    origin: 'https://mensaapp-44095cd41b36.herokuapp.com/',
+    origin: 'https://mensaapp-44095cd41b36.herokuapp.com',
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
     optionsSuccessStatus: 204,
