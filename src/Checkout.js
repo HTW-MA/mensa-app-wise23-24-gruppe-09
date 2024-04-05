@@ -15,13 +15,8 @@ const Checkout = ({ items }) => {
     console.log('Safe Items Length:', safeItems.length);
     // The main component rendering.
     return (
-        <div className={`checkout ${darkMode ? 'dark-mode' : ''}`}>
-            {/* Header for the checkout */}
-
-            {/* Container for the checkout items */}
-            <div className="checkout-items-container">
-
-                {/* Maps over the items and displays each one, if any */}
+        <div className={` Fatima ${darkMode ? 'dark-mode' : ''}`}>
+            <div className="Zeina">
                 {safeItems.length > 0 ? (
                     safeItems.map((item, index) => {
                         // Log the mealName for each item
@@ -30,34 +25,18 @@ const Checkout = ({ items }) => {
                         console.log('safe items in condition:', safeItems);
                         return (
                             <div key={index} className="checkout-item">
-                                {/* Item name and price */}
-                                <p>{item.mealName}</p>
-                                <p>${item.prices[0].price.toFixed(2)}</p>
+                                <div className="item-name">{item.mealName}</div>
+                                <div className="item-price">${item.prices[0].price.toFixed(2)}</div>
                             </div>
                         );
                     })
-                ) : (
+                ) : null
                     // Message displayed if no items are in the basket
-                    <div className="picsss">
-
-                        <div className="image-with-text">
-
-                            <img src="/classic-burger,id=ba2c5be1,b=lecker,w=1200,rm=sk.jpeg" alt="No items in basket"/>
-                            <p className="item-price">5.00$</p>
-                        </div>
-                        <div className="image-with-text">
-                            <p className="item-name">burger</p>
-                            <img src="/classic-burger,id=ba2c5be1,b=lecker,w=1200,rm=sk.jpeg" alt="No items in basket"/>
-                            <p className="item-price">5.00$</p>
-                        </div>
-                    </div>
-                )}
+                }
             </div>
-
-            {/* Checkout button */}
-            <p className='paratotal'> total = 10$ </p>
+            {/* Container for the checkout items */}
         </div>
     );
 };
 
-export default Checkout;
+export default Checkout

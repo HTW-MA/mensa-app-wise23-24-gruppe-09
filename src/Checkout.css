@@ -1,15 +1,15 @@
 /* Style for the Checkout component */
-.checkout {
+
+.Zeina{
+    margin-top: 10vh;
     position: fixed;
     top: 10vh;
-    right: 0;
+    right: 10px;
     width: 300px;
-    height: calc(90vh - 40px); /* Adjust height to fill screen minus top offset */
+    height: 0px; /* Adjust height to fill screen minus top offset */
     background-color: #fff;
-    box-shadow: -2px 0 5px 1px #FE6601;
-    z-index: 2;
-    padding: 20px;
-    border-radius: 20px;
+    z-index: 1;
+    padding: 0px;
     display: flex;
     flex-direction: column;
 }
@@ -22,13 +22,21 @@
 .checkout-item {
     background-color: #f8f8f8; /* Light gray background for each item */
     margin-bottom: 10px; /* Space between items */
-    padding: 10px;
-    border-radius: 10px; /* Rounded corners for item cards */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    align-items: flex-start; /* Align children to start from the flex container */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for each item */
-    z-index: 1;
+    display: flex;
+    padding: 10px; /* Add padding for spacing */
+
+}
+.item-name {
+    font-weight: bold; /* Optionally, make the item name bold */
+    margin-bottom: 5px; /* Optionally, add space between name and price */
+    margin-right: 100px;
+}
+
+/* Style for the item price */
+.item-price {
+    color: #555; /* Optionally, change the color of the price */
 }
 
 /* Style for the checkout button container */
