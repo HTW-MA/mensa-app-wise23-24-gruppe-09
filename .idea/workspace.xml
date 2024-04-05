@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22281f8c-d4ab-428f-a4fa-2cfe0860a5e0" name="Changes" comment="changed the port assignment">
+    <list default="true" id="22281f8c-d4ab-428f-a4fa-2cfe0860a5e0" name="Changes" comment="removed using https from the index.js">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +94,7 @@
       <workItem from="1711135648023" duration="1923000" />
       <workItem from="1711225648694" duration="4718000" />
       <workItem from="1712245306132" duration="920000" />
-      <workItem from="1712246770271" duration="5911000" />
+      <workItem from="1712246770271" duration="10951000" />
     </task>
     <task id="LOCAL-00001" summary="1. Commit in dem ich grundsätzlich die Struktur für das Backend wiedergeben möchte und auch bereits die ersten Endpunkte eingeführt wurden. &#10;&#10;Zu erreichen ist leider bisher nur der /mensa endpoint, die anderen funktionieren noch nicht, auch nach über 24 h fehlersuche nicht">
       <created>1704339293090</created>
@@ -208,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1712259518672</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="removed using https from the index.js">
+      <created>1712266249138</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1712266249138</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,6 +250,7 @@
     <MESSAGE value="Anpassung der id Abfrage in mensaController.js und in mealController.js von lowercase zu uppercase" />
     <MESSAGE value="Anpassung des menueController.js, sodass er spezifische informationen vom backend abrufen kann" />
     <MESSAGE value="changed the port assignment" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed the port assignment" />
+    <MESSAGE value="removed using https from the index.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed using https from the index.js" />
   </component>
 </project>
